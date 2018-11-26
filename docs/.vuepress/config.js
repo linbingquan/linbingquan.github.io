@@ -5,10 +5,11 @@ module.exports = {
   themeConfig: {
     sidebar: [
       {
-        title: 'unity3d',
+        title: '',
         collapsable: false,
         children: [
-          '/',
+          // '/',
+          ['/StandardCSS', '前端规范CSS'],
           ['/unity3d', 'Unity3D教程'],
         ]
       },
