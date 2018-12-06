@@ -10,6 +10,7 @@ module.exports = {
         children: [
           // '/',
           ['/StandardCSS', '前端规范CSS'],
+          ['/media', '前端适配'],
           ['/unity3d', 'Unity3D教程'],
         ]
       },
