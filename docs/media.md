@@ -1,5 +1,35 @@
 # 前端适配
 
+```js
+// rem 适配
+( function ( document, window ) {
+
+  var baseFontSize = 10;
+  var baseWidth = 320;
+  var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+
+  var set = function () {
+
+    var clientWidth = document.documentElement.clientWidth || window.innerWidth;
+    var rem = 10;
+
+    if ( clientWidth != baseWidth ) {
+
+      rem = Math.floor( clientWidth / baseWidth * baseFontSize );
+
+    }
+
+    document.querySelector( 'html' ).style.fontSize = rem + 'px';
+
+  }
+
+  set();
+
+  window.addEventListener( resizeEvt, set );
+
+} ( document, window ) );
+```
+
 ```css
 /* =============================== *\
  *  适配的分辨率 start
