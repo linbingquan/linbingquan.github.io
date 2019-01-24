@@ -1,14 +1,13 @@
 # 前端规范CSS
 
 ### 一、CSS书写顺序
-***
-```css
 1. 位置属性(position, top, right, z-index, display, float等)
 2. 大小(width, height, padding, margin)
-3. 文字系列(font, line-height, letter-spacing, color- text-align等)
+3. 文字系列(font, line-height, letter-spacing, color, text-align等)
 4. 背景(background, border等)
 5. 其他(animation, transition等)
 
+```css
 .container {
     z-index: 100;
     display: inline-block;
@@ -19,11 +18,10 @@
 ```
 
 ### 二、CSS书写规范
-***
 1. 使用CSS缩写属性
-    - CSS有些属性是可以缩写的，比如padding,margin,font等等，这样精简代码同时又能提高用户的阅读体验。
+    - CSS有些属性是可以缩写的，比如padding, margin, font等等，这样精简代码同时又能提高用户的阅读体验。
 
-2. 去掉小数点前的“0”
+2. 去掉小数点前的 0
     ```css
     /* bad */
     .container { font-size: 0.8em; }
@@ -44,19 +42,18 @@
     ```
 
 5. 连字符CSS选择器命名规范
-    - 1）.长名称或词组可以使用中横线来为选择器命名。
-    - 2）.不建议使用“_”下划线来命名CSS选择器，为什么呢？
-    输入的时候少按一个shift键； 浏览器兼容问题 （比如使用_tips的选择器命名，在IE6是无效的） 能良好区分JavaScript变量命名（JS变量命名是用“_”）
+    - 长名称或词组可以使用中横线 `-` 来为选择器命名。
+    - 不建议使用 `_` 下划线来命名CSS选择器，为什么呢？
+    输入的时候少按一个shift键； 浏览器兼容问题 （比如使用_tips的选择器命名，在IE6是无效的） 能良好区分JavaScript变量命名（JS变量命名是用`_`）
 
-6. 不要随意使用id
-    - id在JS是唯一的，不能多次使用，而使用class类选择器却可以重复使用，另外id的优先级优先与class，所以id应该按需使用，而不能滥用。
+6. 不要随意使用ID
+    - ID在JS是唯一的，不能多次使用，而使用class类选择器却可以重复使用，另外ID的优先级优先与class，所以ID应该按需使用，而不能滥用。
 
 7. 为选择器添加状态前缀
-    - 有时候可以给选择器添加一个表示状态的前缀，让语义更明了，比如下图是添加了“.is-”前缀。
+    - 有时候可以给选择器添加一个表示状态的前缀，让语义更明了，比如下图是添加了 `.is-`前缀。
 
 
 ### 三、CSS命名规范（规则）
-***
 #### 常用的CSS命名规则
 ```
 头：header
@@ -104,7 +101,7 @@
 /* End Header */
 ```
 
-#### id的命名:
+#### ID的命名:
 ```
 (1)页面结构
 容器: container
@@ -163,14 +160,12 @@
 ```
 
 ### 四、注意事项
-***
-1. 一律小写;
-2. 尽量用英文;
-3. 不加中槓和下划线;
-4. 尽量不缩写，除非一看就明白的单词。
+1. 一律小写
+2. 尽量用英文
+3. 不加中槓和下划线
+4. 尽量不缩写，除非一看就明白的单词
 
 ### 五、CSS样式表文件命名
-***
 ```
 主要的 master.css
 模块 module.css
