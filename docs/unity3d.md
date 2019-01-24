@@ -1,13 +1,10 @@
 # Unity3D教程(Unity3D Tutorials)
 
-下载链接
-https://unity3d.com/cn/get-unity/download?ref=personal
+[Unity3D 下载链接](https://unity3d.com/cn/get-unity/download?ref=personal)
 
-说明文档
-https://docs.unity3d.com/Manual/index.html
+[Unity3D 说明文档](https://docs.unity3d.com/Manual/index.html)
 
-2017版本说明文档
-https://docs.unity3d.com/2017.4/Documentation/Manual/index.html
+[Unity3D 2017版本说明文档](https://docs.unity3d.com/2017.4/Documentation/Manual/index.html)
 
 ---
 
@@ -38,7 +35,8 @@ public class ScriptLifecycleTest : MonoBehaviour {
   void OnEnable() { Debug.Log("OnEnable----2"); }
   // Start()：开始事件，执行一次。
   void Start() { Debug.Log("Start----3"); }
-  // FixedUpdate()：固定更新事件，执行N次，0.02秒执行一次。所有物理组件相关的更新都在这个事件中处理。
+  // FixedUpdate()：固定更新事件，执行N次，0.02秒执行一次。
+  // 所有物理组件相关的更新都在这个事件中处理。
   void FixedUpdate() { Debug.Log("FixedUpdate----4"); }
   // Update()：更新事件，执行N次，每帧执行一次。
   void Update () { Debug.Log("Update----5"); }
@@ -46,7 +44,8 @@ public class ScriptLifecycleTest : MonoBehaviour {
   void LateUpdate() { Debug.Log("LateUpdate----6"); }
   // OnGUI()：GUI渲染事件，执行N次，执行的次数是 Update() 事件的两倍。
   void OnGUI() { Debug.Log("OnGUI----7"); }
-  // OnDisable()：禁用事件，执行一次。在 OnDestroy() 事件前执行。或者当该脚本组件被“禁用”后，也会触发该事件。
+  // OnDisable()：禁用事件，执行一次。
+  // 在 OnDestroy() 事件前执行。或者当该脚本组件被“禁用”后，也会触发该事件。
   void OnDisable() { Debug.Log("OnDisable----8"); }
   // OnDestroy()：销毁事件，执行一次。当脚本所挂载的游戏物体被销毁时执行。
   void OnDestroy() { Debug.Log("OnDestroy----9"); }
