@@ -2,6 +2,18 @@ module.exports = {
   title: '林炳权的博客', // 设置网站标题
   description: '林炳权的博客', // 设置网站描述
   base: '/',
+  plugins: [
+    '@vuepress/blog',
+    '@vuepress/back-to-top',
+    '@vuepress/medium-zoom',
+    '@vuepress/active-header-links',
+    [ 
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-133197865-1' // UA-00000000-0
+      }
+    ],
+  ],
   themeConfig: {
     sidebar: [
       {
