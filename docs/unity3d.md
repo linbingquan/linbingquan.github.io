@@ -19,7 +19,7 @@ Textures // 贴图
 Materials // 材质
 ```
 
-<!-- ![Image from dependency](./.vuepress/public/images/Unity3D技栈.png) -->
+![Unity3D 技术栈](./unity3d/images/Unity3D.png "Unity3D 技术栈")
 
 ### 脚本生命周期 (Script Lifecycle)
 [脚本生命周期流程图-官方文档](https://docs.unity3d.com/Manual/ExecutionOrder.html)
