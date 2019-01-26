@@ -27,6 +27,13 @@ module.exports = {
           ['/unity3d', 'Unity3D教程'],
         ]
       },
+      {
+        title: 'Tools',
+        collapsable: false,
+        children: [
+          ['/tools/debugcss', 'CSS Debug 技巧'],
+        ]
+      },
     ]
   },
 }
