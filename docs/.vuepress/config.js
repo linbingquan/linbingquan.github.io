@@ -17,7 +17,7 @@ module.exports = {
   themeConfig: {
     sidebar: [
       {
-        title: '',
+        title: '最新文章',
         collapsable: false,
         children: [
           // '/',
