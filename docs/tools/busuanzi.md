@@ -1,5 +1,7 @@
 
-# 不蒜
+# 不蒜子统计计数
+
+[不蒜子](http://busuanzi.ibruce.info/)
 
 ```html
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
