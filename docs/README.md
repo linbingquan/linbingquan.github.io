@@ -16,15 +16,19 @@ sidebar: false
 
 ### Tools
 
-[CSS Debug 技巧](/tools/debugcss.md) 2019.01.26
-
 [手机调试工具](/tools/debugMobile.md) 2019.01.28
 
+[CSS Debug 技巧](/tools/debugcss.md) 2019.01.26
+
 <template>
-    <div class="pv-container">
-        <span id="busuanzi_container_page_pv">总阅读量 <span id="busuanzi_value_page_pv"></span> 次</span>
-        <span id="busuanzi_container_site_pv">总访问量 <span id="busuanzi_value_site_pv"></span> 次</span>
-        <span id="busuanzi_container_site_uv">总访客数 <span id="busuanzi_value_site_uv"></span> 次</span>
+    <div class="bing-footer">
+        <div>Copyright &copy; 林炳权的博客 2019</div>
+        <div>
+            <span>Supported by VuePress</span> | 
+            <span id="busuanzi_container_page_pv">总阅读量 <span id="busuanzi_value_page_pv"></span> 次</span>
+            <span id="busuanzi_container_site_pv">总访问量 <span id="busuanzi_value_site_pv"></span> 次</span>
+            <span id="busuanzi_container_site_uv">总访客数 <span id="busuanzi_value_site_uv"></span> 次</span>
+        </div>
     </div>
 </template>
 
@@ -50,7 +54,7 @@ export default {
 </script>
 
 <style scoped>
-    .pv-container { position: fixed; bottom: 5px; left: 5px; text-align: left; color: #bdbdbd; font-size: 12px; }
+    .bing-footer { position: fixed; bottom: 5px; left: 0; right: 0; text-align: center; color: #bdbdbd; font-size: 12px; }
     #busuanzi_container_page_pv, #busuanzi_container_site_uv { display: none !important; }
     @media screen and (max-width: 750px) { .pv-container { display: none; } }
 </style>
