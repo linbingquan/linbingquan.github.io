@@ -22,10 +22,8 @@ export default {
 
         loadScript('https://threejs.org/build/three.min.js', () => {
 
-            console.log(THREE);
-
-            var CANVAS_WIDTH = 400;
-            var CANVAS_HEIGHT = 400;
+            var CANVAS_WIDTH = document.getElementById('canvas-container').clientWidth;
+            var CANVAS_HEIGHT = CANVAS_WIDTH;
 
             var scene = new THREE.Scene();
             var camera = new THREE.PerspectiveCamera( 75, CANVAS_WIDTH / CANVAS_HEIGHT, 0.1, 1000 );
