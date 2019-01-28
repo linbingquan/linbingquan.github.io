@@ -1,6 +1,8 @@
 # 手机调试工具 
 
-适用于无法调用浏览器开发者工具
+[VConsole](https://github.com/Tencent/vConsole) 是一个轻量、可拓展、针对手机网页的前端开发者调试面板
+
+[Eruda](https://github.com/liriliri/eruda) 是一个专为手机网页前端设计的调试面板，类似 DevTools 的迷你版
 
 ```js
 /**

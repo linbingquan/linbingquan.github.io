@@ -32,6 +32,7 @@ module.exports = {
         collapsable: false,
         children: [
           ['/tools/debugcss', 'CSS Debug 技巧'],
+          ['/tools/debugMobile', '手机调试工具'],
         ]
       },
     ]
