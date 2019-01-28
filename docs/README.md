@@ -18,7 +18,7 @@ sidebar: false
 
 [CSS Debug 技巧](/tools/debugcss.md) 2019.01.26
 
-[手机调试工具](/tools/debugMobile.md) 2019.01.2o
+[手机调试工具](/tools/debugMobile.md) 2019.01.28
 
 <template>
     <div class="pv-container">
