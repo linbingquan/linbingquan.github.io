@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>手机调试工具 | 林炳权的博客</title>
+    <meta name="description" content="林炳权的博客">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.1366d1a6.css" as="style"><link rel="preload" href="/assets/js/app.3d4082c3.js" as="script"><link rel="preload" href="/assets/js/2.70b59adb.js" as="script"><link rel="preload" href="/assets/js/11.3717be2b.js" as="script"><link rel="prefetch" href="/assets/js/10.ce13ccd2.js"><link rel="prefetch" href="/assets/js/12.8acce03c.js"><link rel="prefetch" href="/assets/js/13.955747e4.js"><link rel="prefetch" href="/assets/js/3.075f5903.js"><link rel="prefetch" href="/assets/js/4.e1806004.js"><link rel="prefetch" href="/assets/js/5.328bbb38.js"><link rel="prefetch" href="/assets/js/6.1fc2b591.js"><link rel="prefetch" href="/assets/js/7.5bda6df9.js"><link rel="prefetch" href="/assets/js/8.2a6a305d.js"><link rel="prefetch" href="/assets/js/9.8d4a414f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1366d1a6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">林炳权的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group first"><p class="sidebar-heading"><span>最新文章</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/password.html" class="sidebar-link">密码验证</a></li><li><a href="/StandardCSS.html" class="sidebar-link">前端规范CSS</a></li><li><a href="/media.html" class="sidebar-link">前端适配</a></li><li><a href="/unity3d.html" class="sidebar-link">Unity3D教程</a></li></ul></section></li><li><section class="sidebar-group"><p class="sidebar-heading open"><span>Tools</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/tools/debugcss.html" class="sidebar-link">CSS Debug 技巧</a></li><li><a href="/tools/debugMobile.html" class="active sidebar-link">手机调试工具</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="手机调试工具"><a href="#手机调试工具" aria-hidden="true" class="header-anchor">#</a> 手机调试工具</h1> <p><a href="https://github.com/Tencent/vConsole" target="_blank" rel="noopener noreferrer">VConsole<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 是一个轻量、可拓展、针对手机网页的前端开发者调试面板</p> <p><a href="https://github.com/liriliri/eruda" target="_blank" rel="noopener noreferrer">Eruda<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 是一个专为手机网页前端设计的调试面板，类似 DevTools 的迷你版</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+* 加载script文件
+* @param url
+* @param callback
+*/</span>
+<span class="token keyword">const</span> <span class="token function-variable function">loadScript</span> <span class="token operator">=</span> <span class="token punctuation">(</span>url<span class="token punctuation">,</span> callback<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> script <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'script'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    script<span class="token punctuation">.</span>src <span class="token operator">=</span> url<span class="token punctuation">;</span>
+    <span class="token comment">// 加载之后立即执行</span>
+    script<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> callback <span class="token operator">&amp;&amp;</span> <span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>script<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token regex">/eruda=true/</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>location<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// eruda 调试工具</span>
+    <span class="token function">loadScript</span><span class="token punctuation">(</span> <span class="token string">'https://cdn.jsdelivr.net/npm/eruda'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> eruda<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">// VConsole 调试工具</span>
+    <span class="token function">loadScript</span><span class="token punctuation">(</span> <span class="token string">'https://cdn.jsdelivr.net/npm/vconsole'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token keyword">new</span> <span class="token class-name">VConsole</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/tools/debugcss.html" class="prev">
+          CSS Debug 技巧
+        </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.3d4082c3.js" defer></script><script src="/assets/js/2.70b59adb.js" defer></script><script src="/assets/js/11.3717be2b.js" defer></script>
+  </body>
+</html>
