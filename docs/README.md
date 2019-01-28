@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style scoped>
-    .bing-footer { position: fixed; bottom: 5px; left: 0; right: 0; text-align: center; color: #bdbdbd; font-size: 12px; }
+    .bing-footer { margin-top: 100px; text-align: center; color: #bdbdbd; font-size: 12px; }
     #busuanzi_container_page_pv, #busuanzi_container_site_uv { display: none !important; }
     @media screen and (max-width: 750px) { .pv-container { display: none; } }
 </style>
