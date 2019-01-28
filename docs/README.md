@@ -46,10 +46,16 @@ export default {
         script.src = url;
         // 加载之后立即执行
         script.onload = () => callback && callback();
+
+        this.$refs.busuanzi = script; // destroyed
+
         document.body.appendChild(script);
     }
 
     loadScript('https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
+  },
+  destroyed () {
+      this.$refs.busuanzi.remove();
   }
 }
 </script>
