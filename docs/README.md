@@ -23,11 +23,11 @@ title: 首页
 
 <template>
     <div class="bing-footer">
-        <div>Copyright &copy; 林炳权的博客 2019</div>
+        <div>&copy; 2019 林炳权</div>
         <div>
-            <span>Supported by VuePress</span> | 
+            <a href="https://github.com/linbingquan" title="GitHub"><span>GitHub</span></a> | 
             <span id="busuanzi_container_page_pv">总阅读量 <span id="busuanzi_value_page_pv"></span> 次</span>
-            <span id="busuanzi_container_site_pv">总访问量 <span id="busuanzi_value_site_pv"></span> 次</span>
+            <span id="busuanzi_container_site_pv">总访问量 <span id="busuanzi_value_site_pv"></span></span>
             <span id="busuanzi_container_site_uv">总访客数 <span id="busuanzi_value_site_uv"></span> 次</span>
         </div>
     </div>
