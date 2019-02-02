@@ -14,6 +14,9 @@ module.exports = {
       }
     ],
   ],
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     sidebar: [
       {
