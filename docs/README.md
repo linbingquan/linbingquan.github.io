@@ -5,6 +5,8 @@ title: 首页
 
 ### 最新文章
 
+[Unity3D实例](/unity3d/examples/unity3d_ball.md) 2019.01.29
+
 [前端正则验证](/regexp.md) 2019.01.29 更新
 
 [前端适配](/media.md) 2018.12.06
@@ -16,6 +18,8 @@ title: 首页
 ---
 
 ### Tools
+
+[Shell 脚本](/tools/shell.md) 2019.02.02
 
 [手机调试工具](/tools/debugMobile.md) 2019.01.28
 

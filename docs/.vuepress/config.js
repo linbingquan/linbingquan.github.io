@@ -24,6 +24,7 @@ module.exports = {
         collapsable: false,
         children: [
           // '/',
+          ['/unity3d/examples/unity3d_ball', 'Unity3D实例'],
           ['/regexp', '前端正则验证'],
           ['/StandardCSS', '前端规范CSS'],
           ['/media', '前端适配'],
@@ -34,6 +35,7 @@ module.exports = {
         title: 'Tools',
         collapsable: false,
         children: [
+          ['/tools/shell', 'Shell 脚本'],
           ['/tools/debugcss', 'CSS Debug 技巧'],
           ['/tools/debugMobile', '手机调试工具'],
         ]
