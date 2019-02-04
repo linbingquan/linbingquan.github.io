@@ -5,27 +5,27 @@ title: 首页
 
 ### 最新文章
 
-[TypeScript Webpack配置](/typescript/typescript_wepack.md) 2019.02.04
+2019.02.04 [TypeScript Webpack配置](/typescript/typescript_wepack.md)
 
-[Unity3D实例](/unity3d/examples/unity3d_ball.md) 2019.01.29
+2019.01.29 [Unity3D实例](/unity3d/examples/unity3d_ball.md)
 
-[前端正则验证](/regexp.md) 2019.01.29 更新
+2019.01.29 [前端正则验证](/regexp.md)
 
-[前端适配](/media.md) 2018.12.06
+2018.12.06 [前端适配](/media.md)
 
-[前端规范CSS](/StandardCSS.md) 2018.11.26
+2018.11.26 [前端规范CSS](/StandardCSS.md)
 
-[Unity3D教程](/unity3d.md) 2018.10.23
+2018.10.23 [Unity3D教程](/unity3d.md)
 
 ---
 
 ### Tools
 
-[Shell 脚本](/tools/shell.md) 2019.02.02
+2019.02.02 [Shell 脚本](/tools/shell.md)
 
-[手机调试工具](/tools/debugMobile.md) 2019.01.28
+2019.01.28 [手机调试工具](/tools/debugMobile.md)
 
-[CSS Debug 技巧](/tools/debugcss.md) 2019.01.26
+2019.01.26 [CSS Debug 技巧](/tools/debugcss.md)
 
 <template>
     <div class="bing-footer">
