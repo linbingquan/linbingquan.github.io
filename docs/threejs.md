@@ -29,6 +29,7 @@ export default {
             var camera = new THREE.PerspectiveCamera( 75, CANVAS_WIDTH / CANVAS_HEIGHT, 0.1, 1000 );
 
             var renderer = new THREE.WebGLRenderer();
+            renderer.setPixelRatio( window.devicePixelRatio );
             renderer.setSize( CANVAS_WIDTH, CANVAS_HEIGHT );
             var canvasBoxDom = document.getElementById('canvas-container');
             canvasBoxDom.appendChild( renderer.domElement );
