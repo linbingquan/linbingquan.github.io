@@ -24,7 +24,7 @@ module.exports = {
         collapsable: false,
         children: [
           // '/',
-          ['/typescript/typescript_wepack', 'TypeScript Webpack配置'],
+          ['/typescript/web_config', 'TypeScript配置'],
           ['/unity3d/examples/unity3d_ball', 'Unity3D实例'],
           ['/regexp', '前端正则验证'],
           ['/StandardCSS', '前端规范CSS'],

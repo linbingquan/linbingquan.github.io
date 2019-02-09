@@ -1,6 +1,6 @@
-# typescript - webpack 配置
+# TypeScript 配置
 
-最简关键配置
+Web引用TypeScript相关配置
 
 #### tsconfig.json
 ```json
@@ -15,6 +15,7 @@
 
 #### package.json
 ```json
+  // npm install -D ts-loader typescript webpack webpack-cli
   "devDependencies": { // 开发依赖包
     "ts-loader": "^5.3.3",
     "typescript": "^3.3.1",
