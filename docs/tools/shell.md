@@ -6,3 +6,8 @@
 npm ls --dethp 0
 ```
 [npm docs](https://docs.npmjs.com/cli/ls)
+
+#### cmd alias
+```shell
+@doskey hs=http-server ./ $*
+```
