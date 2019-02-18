@@ -11,3 +11,8 @@ npm ls --dethp 0
 ```shell
 @doskey hs=http-server ./ $*
 ```
+
+#### adb tool
+```shell
+adb reverse tcp:8080 tcp:8080
+```
