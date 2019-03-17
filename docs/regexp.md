@@ -1,6 +1,17 @@
 
 # 前端正则验证
 
+### 获取url传递参数
+
+```js
+function getQueryString(name) {
+    var reg = new RegExp(`(^|&)${name}=([^&]*)(&|$)`, "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]);
+    return null;
+}
+```
+
 ### 密码验证
 
 数字、字母、特殊字符（除空格），两个以上组合
