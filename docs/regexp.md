@@ -10,6 +10,15 @@ function getQueryString(name) {
     if (r != null) return unescape(r[2]);
     return null;
 }
+
+function getQueryStringByName(name) {
+    var href = decodeURI(window.location.href); // 转义
+    var r = href.match(new RegExp(`[\?\&]${name}=([^\&]+)`, "i"));
+    if (r == null || r.length < 1) {
+        return "";
+    }
+    return r[1];
+}
 ```
 
 ### 密码验证
