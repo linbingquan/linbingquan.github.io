@@ -24,6 +24,7 @@ module.exports = {
         collapsable: false,
         children: [
           // '/',
+          ['/algorithm', '算法'],
           ['/StandardJS', '前端规范JavaScript'],
           ['/typescript/web_config', 'TypeScript配置'],
           ['/unity3d/examples/unity3d_ball', 'Unity3D实例'],

@@ -5,6 +5,8 @@ title: 首页
 
 ### 最新文章
 
+2019.03.31 [算法](/algorithm.md)
+
 2019.02.09 [前端规范JavaScript](/StandardJS.md)
 
 2019.02.04 [TypeScript配置](/typescript/web_config.md)
