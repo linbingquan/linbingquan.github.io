@@ -15,7 +15,7 @@ title: 首页
 
 2019.01.29 [前端正则验证](/regexp.md)
 
-2018.12.06 [前端适配](/media.md)
+2018.12.06 [前端适配](/adaptation.md)
 
 2018.11.26 [前端规范CSS](/StandardCSS.md)
 

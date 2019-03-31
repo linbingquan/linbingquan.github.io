@@ -30,7 +30,7 @@ module.exports = {
           ['/unity3d/examples/unity3d_ball', 'Unity3D实例'],
           ['/regexp', '前端正则验证'],
           ['/StandardCSS', '前端规范CSS'],
-          ['/media', '前端适配'],
+          ['/adaptation', '前端适配'],
           ['/unity3d', 'Unity3D教程'],
         ]
       },
