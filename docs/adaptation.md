@@ -6,7 +6,7 @@
 /* 屏幕适配 */
 ( function ( document, window ) {
   var baseFontSize = 10; // *10 为了方便计算
-  var baseWidth = 320; // 移动端设计稿宽
+  var baseWidth = 320; // 移动端设计稿宽 如果你的设计稿宽为 1080px 设置为 1080
   var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
   var set = function () {
     var clientWidth = document.documentElement.clientWidth || window.innerWidth;
