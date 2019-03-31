@@ -1,12 +1,12 @@
-# 前端适配
+# 前端适配 (Screen Adaptation)
 
 ### rem 适配
 
 ```js
-/* rem 适配 */
+/* 屏幕适配 */
 ( function ( document, window ) {
-  var baseFontSize = 10;
-  var baseWidth = 320;
+  var baseFontSize = 10; // *10 为了方便计算
+  var baseWidth = 320; // 移动端设计稿宽
   var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
   var set = function () {
     var clientWidth = document.documentElement.clientWidth || window.innerWidth;
