@@ -7,6 +7,16 @@ npm ls --depth 0
 ```
 [npm docs](https://docs.npmjs.com/cli/ls)
 
+#### 私有npm库
+```shell
+npm install -g sinopia
+```
+
+#### 切换本地源
+```shell
+npm install -g nrm
+```
+
 #### cmd alias
 ```shell
 @doskey hs=http-server ./ $*
