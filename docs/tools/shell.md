@@ -9,6 +9,7 @@ npm ls --depth 0
 
 #### 私有npm库
 ```shell
+npm install -g verdaccio
 npm install -g sinopia
 ```
 
