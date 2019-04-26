@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>React - hooks</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <!-- bootstrap4: shrink-to-fit=no for IOS9 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+  <!-- Don't use this in production: -->
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+  <div>使用 React 自带的 useReducer 和 useContext 来实现 Redux（包含异步action的解决方案）</div>
+  <div id="root"></div>
+  <script type="text/babel">
+    // 判断是否是Promise对象
+    function isPromise(obj) {
+      return (
+        !!obj &&
+        (typeof obj === 'object' || typeof obj === 'function') &&
+        typeof obj.then === 'function'
+      );
+    }
+
+    // 异步请求
+    async function asyncFetch(p) {
+      return new Promise(resolve => {
+        setTimeout(() => {
+          resolve(p);
+        }, 1000);
+      });
+    }
+
+    // 全局Context
+    const Context = React.createContext();
+
+    // 初始化state
+    const initialState = {
+      value: 0,
+      loading: false
+    };
+
+    // 行为类型action type
+    const types = {
+      ASYNC_CLICK: 'ASYNC_CLICK', // 异步请求
+      SYNC_CLICK: 'SYNC_CLICK', // 同步请求
+      LOADING_START: 'LOADING_START', // 请求开始
+      LOADING_END: 'LOADING_END' // 请求结束
+    };
+
+    // reducer
+    function reducer(state = initialState, action) {
+      switch (action.type) {
+        case types.ASYNC_CLICK:
+        case types.SYNC_CLICK:
+          return { ...state, value: action.payload };
+        case types.LOADING_START:
+          return { ...state, loading: true };
+        case types.LOADING_END:
+          return { ...state, loading: false };
+        default:
+          throw new Error();
+      }
+    }
+
+    // 拦截封装dispatch
+    function wrapperDispatch(dispatch) {
+      return function(action) {
+        if (isPromise(action.payload)) {
+          dispatch({ type: types.LOADING_START });
+          action.payload.then(payload => {
+            dispatch({ type: action.type, payload });
+            dispatch({ type: types.LOADING_END });
+          });
+        } else {
+          dispatch(action);
+        }
+      };
+    }
+
+    function App() {
+      const [state, dispatch] = React.useReducer(reducer, initialState);
+      return (
+        <Context.Provider
+          value={{ state, dispatch: wrapperDispatch(dispatch) }}
+        >
+          <React.Fragment>
+            <Hello />
+          </React.Fragment>
+        </Context.Provider>
+      );
+    }
+
+    function Hello() {
+      const { state, dispatch } = React.useContext(Context);
+      return (
+        <React.Fragment>
+          <button
+            disabled={state.loading}
+            onClick={() =>
+              dispatch({
+                type: types.ASYNC_CLICK,
+                payload: asyncFetch(new Date().getTime()) // 异步请求
+              })
+            }
+          >
+            async btn
+          </button>
+          <button
+            disabled={state.loading}
+            onClick={() =>
+              dispatch({
+                type: types.SYNC_CLICK,
+                payload: new Date().getTime() // 同步请求
+              })
+            }
+          >
+            sync btn
+          </button>
+          <pre>{JSON.stringify(state, null, 2)}</pre>
+        </React.Fragment>
+      );
+    }
+
+    // 挂载App
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+  <!--
+    Note: this page is a great way to try React but it's not suitable for production.
+    It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+    Read this section for a production-ready setup with JSX:
+    https://reactjs.org/docs/add-react-to-a-website.html#add-jsx-to-a-project
+
+    In a larger project, you can use an integrated toolchain that includes JSX instead:
+    https://reactjs.org/docs/create-a-new-react-app.html
+
+    You can also use React without JSX, in which case you can remove Babel:
+    https://reactjs.org/docs/react-without-jsx.html
+  -->
+</body>
+
+</html>
