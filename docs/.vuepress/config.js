@@ -24,6 +24,7 @@ module.exports = {
         collapsable: false,
         children: [
           // '/',
+          ['/react/react-lifecycle', 'React生命周期'],
           ['/algorithm', '算法'],
           ['/StandardJS', '前端规范JavaScript'],
           ['/typescript/web_config', 'TypeScript配置'],
