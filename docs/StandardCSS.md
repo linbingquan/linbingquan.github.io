@@ -1,5 +1,7 @@
 # 前端规范CSS
 
+> 代码千万行，注释第一行。命名不规范，同事两行泪。
+
 ### 一、CSS书写顺序
 1. 位置属性(position, top, right, z-index, display, float等)
 2. 大小(width, height, padding, margin)
