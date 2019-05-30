@@ -55,3 +55,32 @@ if (!!a) {
 -function(){ /* code */ }();
 +function(){ /* code */ }();
 ```
+
+匿名函数应用
+
+```js
+{a: 12, b:13}['a'] // Uncaught SyntaxError: Unexpected token :
+{a: 12, b:13}.a // Uncaught SyntaxError: Unexpected token :
+
+({a: 12, b:13}['a']) // 12
+!!{a: 12, b:13}['a'] // true
+!{a: 12, b:13}['a'] // false
+~{a: 12, b:13}['a'] // -13
+-{a: 12, b:13}['a'] // -12
++{a: 12, b:13}['a'] // 12
+!function(){console.log(123)}() // 123 true
+```
+
+匿名函数应用 react 枚举渲染
+
+```jsx
+const APP: React.FunctionComponent<any> = () => {
+  const [type, setStyle] = useState < string > "noData";
+  const content = {
+    networkError: <div>some error with your network</div>,
+    noData: <div>have no data</div>,
+    success: <div>have data</div>
+  };
+  return <div>{content[type]}</div>;
+};
+```
