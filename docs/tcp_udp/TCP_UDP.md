@@ -2,6 +2,8 @@
 
 TCP 为什么握手三次、挥手四次？
 
+![TCP](./tcp_detail.png)
+
 ![TCP](./TCP.jpg)
 
 [跟着动画来学习 TCP 三次握手和四次挥手](https://juejin.im/post/5b29d2c4e51d4558b80b1d8c)
