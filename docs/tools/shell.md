@@ -27,3 +27,12 @@ npm install -g nrm
 ```shell
 adb reverse tcp:8080 tcp:8080
 ```
+#### cmd utf-8 中文显示
+```
+@echo off
+REM 声明采用UTF-8编码
+chcp 65001
+echo test
+echo 中文测试
+pause
+```
