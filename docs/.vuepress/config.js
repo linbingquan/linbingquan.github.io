@@ -24,6 +24,7 @@ module.exports = {
         collapsable: false,
         children: [
           // '/',
+          ['/three/three-blender', 'WebGL所见即所得'],
           ['/react/react-lifecycle', 'React生命周期'],
           ['/algorithm', '算法'],
           ['/StandardJS', '前端规范JavaScript'],
