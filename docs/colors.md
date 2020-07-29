@@ -100,7 +100,9 @@
     align-items: center;
     flex-direction: column;
     width: 725px;
+    max-width: 90vw;
     height: 725px;
+    max-height: 75vh;
     background: #2a3950;
 }
 
@@ -129,6 +131,7 @@
 .color-palette .color {
     position: relative;
     width: 100px;
+    max-width: 10vw;
     height: 250px;
     margin: 0 10px;
     border-radius: 25px;
@@ -138,6 +141,7 @@
     display: block;
     position: absolute;
     width: 100px;
+    max-width: 10vw;
     bottom: -45px;
     text-align: center;
     font-size: 12px;
