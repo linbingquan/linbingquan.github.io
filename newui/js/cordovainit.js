@@ -115,7 +115,7 @@ function initVconsole () {
           // eslint-disable-next-line no-undef
           new VConsole();
         });
-      }, 1000 * 8);
+      }, 1000 * 5);
     });
     loggerDom.addEventListener('touchmove', function () {
       loggerTimer && clearTimeout(loggerTimer);
