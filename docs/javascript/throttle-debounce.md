@@ -1,39 +1,44 @@
 # throttle 函数与 debounce 函数的详解
 
-> throttle 函数与 debounce 函数的区别就是 throttle 函数在触发后会马上执行，而 debounce 函数会在一定延迟后才执行。从触发开始到延迟结束，只执行函数一次。
+> throttle 最常见的例子是在监听 mousemove/resize/scroll 事件
 
 ```js
-// 第一次触发时立即执行函数，每个delay时间间隔，最多只能执行函数一次
-// 最常见的例子是在监听resize/scroll事件
-function throttle(fn, delay) {
-  let timer;
-  return function() {
-    let last = timer;
-    let now = Data.now();
-    if (!last) {
-      timer = now;
+// 时间戳版本
+function throttle(fn, wait = 1000) {
+  let pre = 0;
+  return function () {
+    const now = Date.now();
+    if (now - pre >= wait) {
       fn.apply(this, arguments);
-      return;
+      pre = now;
     }
-    if (last + delay > now) return;
-    timer = now;
-    fn.apply(this, arguments);
+  };
+}
+
+// 定时器版本
+function throttle(fn, wait = 1000) {
+  let timer;
+  return function () {
+    if (!timer) {
+      timer = setTimeout(() => {
+        fn.apply(this, arguments);
+        clearTimeout(timer);
+      }, wait);
+    }
   };
 }
 ```
 
+> debounce 最常见的业务场景是监听 change 事件
+
 ```js
-// 最常见的业务场景是监听onchange事件
-function debounce(fn, delay = 0) {
+function debounce(fn, wait = 1000) {
   let timer;
-  return function() {
+  return function () {
     if (timer) clearTimeout(timer);
     timer = setTimeout(() => {
-      timer = undefined;
       fn.apply(this, arguments);
-    }, delay);
+    }, wait);
   };
 }
 ```
-
-[Baidu](https://baijiahao.baidu.com/s?id=1613466256736316214)

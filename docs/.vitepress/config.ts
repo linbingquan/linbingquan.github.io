@@ -16,7 +16,7 @@ export default defineConfig({
         text: "javascript",
         collapsible: true,
         items: [
-          { text: "前端防抖节流", link: "/javascript/throttle-debounce" },
+          { text: "前端节流防抖", link: "/javascript/throttle-debounce" },
           { text: "前端正则验证", link: "/javascript/regexp" },
         ],
       },
