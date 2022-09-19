@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,a as l}from"./app.2bd35271.js";const i=JSON.parse('{"title":"\u5E76\u53D1\u8BF7\u6C42","description":"","frontmatter":{},"headers":[],"relativePath":"algorithm/concurrent.md"}'),p={name:"algorithm/concurrent.md"},o=l("",2),e=[o];function c(t,r,F,y,D,A){return a(),n("div",null,e)}const u=s(p,[["render",c]]);export{i as __pageData,u as default};
