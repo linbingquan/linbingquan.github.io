@@ -34,6 +34,7 @@ export default defineConfig({
           { text: "交换数据", link: "/algorithm/swap" },
           { text: "随机算法", link: "/algorithm/shuffle" },
           { text: "并发请求", link: "/algorithm/concurrent" },
+          { text: "路径总和", link: "/algorithm/path-sum" },
         ],
       },
       {
