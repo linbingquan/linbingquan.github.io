@@ -35,6 +35,7 @@ export default defineConfig({
           { text: "随机算法", link: "/algorithm/shuffle" },
           { text: "并发请求", link: "/algorithm/concurrent" },
           { text: "路径总和", link: "/algorithm/path-sum" },
+          { text: "二分搜索", link: "/algorithm/binary-search" },
         ],
       },
       {
