@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a as l}from"./app.1b60d86b.js";const i=JSON.parse('{"title":"\u5B57\u7B26\u4E32\u53CD\u8F6C","description":"","frontmatter":{},"headers":[],"relativePath":"algorithm/reverse.md"}'),p={name:"algorithm/reverse.md"},o=l("",2),e=[o];function t(r,c,F,y,D,A){return n(),a("div",null,e)}const _=s(p,[["render",t]]);export{i as __pageData,_ as default};

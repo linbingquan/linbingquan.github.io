@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as p}from"./app.08cf7827.js";const i=JSON.parse('{"title":"\u4EA4\u6362\u6570\u636E","description":"","frontmatter":{},"headers":[],"relativePath":"algorithm/swap.md"}'),l={name:"algorithm/swap.md"},o=p("",12),e=[o];function c(t,r,D,y,C,A){return n(),a("div",null,e)}const d=s(l,[["render",c]]);export{i as __pageData,d as default};
