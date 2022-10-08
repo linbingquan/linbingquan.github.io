@@ -36,7 +36,8 @@ export default defineConfig({
           { text: "并发请求", link: "/algorithm/concurrent" },
           { text: "路径总和", link: "/algorithm/path-sum" },
           { text: "二分搜索", link: "/algorithm/binary-search" },
-          { text: "字符串反转", link: "/algorithm/reverse" },
+          { text: "字符串反转", link: "/algorithm/string-reverse" },
+          { text: "爬楼梯", link: "/algorithm/climb-stairs" },
         ],
       },
       {
