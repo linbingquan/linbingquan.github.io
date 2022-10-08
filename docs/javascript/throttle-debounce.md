@@ -17,12 +17,12 @@ function throttle(fn, wait = 1000) {
 
 // 定时器版本
 function throttle(fn, wait = 1000) {
-  let timer;
+  let timer = null;
   return function () {
     if (!timer) {
       timer = setTimeout(() => {
         fn.apply(this, arguments);
-        clearTimeout(timer);
+        timer = null;
       }, wait);
     }
   };
