@@ -38,6 +38,7 @@ export default defineConfig({
           { text: "二分搜索", link: "/algorithm/binary-search" },
           { text: "字符串反转", link: "/algorithm/string-reverse" },
           { text: "爬楼梯", link: "/algorithm/climb-stairs" },
+          { text: "翻转二叉树", link: "/algorithm/invert-tree" },
         ],
       },
       {
