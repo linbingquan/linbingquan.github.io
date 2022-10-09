@@ -39,6 +39,7 @@ export default defineConfig({
           { text: "字符串反转", link: "/algorithm/string-reverse" },
           { text: "爬楼梯", link: "/algorithm/climb-stairs" },
           { text: "翻转二叉树", link: "/algorithm/invert-tree" },
+          { text: "进制转换", link: "/algorithm/number-conver" },
         ],
       },
       {
