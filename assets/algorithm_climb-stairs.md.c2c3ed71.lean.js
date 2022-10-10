@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.869bcca9.js";const i=JSON.parse('{"title":"\u722C\u697C\u68AF","description":"","frontmatter":{},"headers":[],"relativePath":"algorithm/climb-stairs.md"}'),p={name:"algorithm/climb-stairs.md"},o=l("",17),e=[o];function c(t,r,F,y,D,C){return a(),n("div",null,e)}const d=s(p,[["render",c]]);export{i as __pageData,d as default};
