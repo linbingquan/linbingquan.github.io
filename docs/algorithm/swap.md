@@ -7,8 +7,8 @@
 方法一
 
 ```js
-var a = 3;
-var b = 4;
+let a = 3;
+let b = 4;
 
 a = a + b; // 7
 b = a - b; // 3
@@ -18,8 +18,8 @@ a = a - b; // 4
 方法二
 
 ```js
-var a = 3;
-var b = 4;
+let a = 3;
+let b = 4;
 
 a = a ^ b; // 7
 b = b ^ a; // 3
@@ -33,7 +33,7 @@ a = a ^ b; // 4
 ```js
 let a = "hello",
   b = "world";
-a = [b, (b = a)][0];
+a = [b, b = a][0];
 ```
 
 方法四
@@ -42,4 +42,15 @@ a = [b, (b = a)][0];
 let a = "hello",
   b = "world";
 [a, b] = [b, a]; // ES6的spread语法
+```
+
+数组交换数据
+
+```js
+function swap(arr, i, j) {
+  if (i === j) return;
+  arr[i] = arr[i] ^ arr[j];
+  arr[j] = arr[i] ^ arr[j];
+  arr[i] = arr[i] ^ arr[j];
+}
 ```
