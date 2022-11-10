@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 export default defineConfig({
   title: "林炳权的博客",
@@ -18,6 +18,7 @@ export default defineConfig({
         items: [
           { text: "前端节流防抖", link: "/javascript/throttle-debounce" },
           { text: "前端正则验证", link: "/javascript/regexp" },
+          { text: "原型链", link: "/javascript/prototype" },
         ],
       },
       {
@@ -40,6 +41,13 @@ export default defineConfig({
           { text: "爬楼梯", link: "/algorithm/climb-stairs" },
           { text: "翻转二叉树", link: "/algorithm/invert-tree" },
           { text: "进制转换", link: "/algorithm/number-conver" },
+        ],
+      },
+      {
+        text: "面试题目",
+        collapsible: true,
+        items: [
+          { text: "promise", link: "/interview/promise" },
         ],
       },
       {
