@@ -45,6 +45,13 @@ export default defineConfig({
         ],
       },
       {
+        text: "设计",
+        collapsible: true,
+        items: [
+          { text: "配色方案", link: "/design/colors" },
+        ]
+      },
+      {
         text: "面试题目",
         collapsible: true,
         items: [
