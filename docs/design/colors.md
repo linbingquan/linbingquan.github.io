@@ -108,7 +108,6 @@
 .color-palette .title {
     display: block;
     margin-bottom: 20px;
-    color: #ffffff;
     font-size: 42px;
     font-weight: 700;
     text-align: center;
@@ -134,6 +133,7 @@
     height: 250px;
     margin: 0 10px;
     border-radius: 25px;
+    border: 1px solid;
 }
 
 .color-palette .color span {
@@ -144,7 +144,6 @@
     bottom: -45px;
     text-align: center;
     font-size: 12px;
-    color: #ffffff;
     text-transform: uppercase;
 }
 
