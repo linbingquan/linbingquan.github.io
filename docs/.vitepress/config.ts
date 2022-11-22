@@ -13,7 +13,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "javascript",
+        text: "JavaScript",
         collapsible: true,
         items: [
           { text: "数据类型", link: "/javascript/data-types" },
@@ -23,7 +23,15 @@ export default defineConfig({
         ],
       },
       {
-        text: "css",
+        text: "WebGL",
+        collapsible: true,
+        items: [
+          { text: "WebGL 入门", link: "/webgl/tutorial" },
+          { text: "WebGL 所见即所得", link: "/webgl/blender-threejs" },
+        ]
+      },
+      {
+        text: "CSS",
         collapsible: true,
         items: [
           { text: "前端适配", link: "/css/adaptation" },
