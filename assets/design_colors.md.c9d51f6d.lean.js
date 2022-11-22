@@ -1,1 +1,0 @@
-import{_ as s,c as o,o as a,a as c}from"./app.a4fe9faa.js";const b=JSON.parse('{"title":"\u914D\u8272\u65B9\u6848","description":"","frontmatter":{},"headers":[],"relativePath":"design/colors.md"}'),l={name:"design/colors.md"},i=c("",2),d=[i];function v(r,e,n,t,p,f){return a(),o("div",null,d)}const h=s(l,[["render",v]]);export{b as __pageData,h as default};

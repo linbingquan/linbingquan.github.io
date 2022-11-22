@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,a as l}from"./app.a4fe9faa.js";const C=JSON.parse('{"title":"\u7FFB\u8F6C\u4E8C\u53C9\u6811","description":"","frontmatter":{},"headers":[],"relativePath":"algorithm/invert-tree.md"}'),o={name:"algorithm/invert-tree.md"},p=l("",2),e=[p];function t(r,c,F,y,D,A){return a(),n("div",null,e)}const _=s(o,[["render",t]]);export{C as __pageData,_ as default};
