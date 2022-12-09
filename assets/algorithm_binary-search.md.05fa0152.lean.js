@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a as l}from"./app.51f14afb.js";const i=JSON.parse('{"title":"\u4E8C\u5206\u641C\u7D22","description":"","frontmatter":{},"headers":[],"relativePath":"algorithm/binary-search.md"}'),p={name:"algorithm/binary-search.md"},o=l("",3),e=[o];function t(c,r,F,y,D,C){return n(),a("div",null,e)}const h=s(p,[["render",t]]);export{i as __pageData,h as default};
