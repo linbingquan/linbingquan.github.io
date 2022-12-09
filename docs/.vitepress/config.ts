@@ -9,7 +9,7 @@ export default defineConfig({
         text: "介绍",
         collapsible: true,
         items: [
-          { text: "个人简历", link: "/resume/linbingquan" },
+          { text: "林炳权", link: "/resume/linbingquan" },
         ],
       },
       {
