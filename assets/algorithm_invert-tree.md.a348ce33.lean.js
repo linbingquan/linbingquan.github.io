@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,a as l}from"./app.3a22aa36.js";const C=JSON.parse('{"title":"翻转二叉树","description":"","frontmatter":{},"headers":[],"relativePath":"algorithm/invert-tree.md"}'),o={name:"algorithm/invert-tree.md"},p=l("",2),t=[p];function e(r,c,y,F,D,i){return a(),n("div",null,t)}const _=s(o,[["render",e]]);export{C as __pageData,_ as default};

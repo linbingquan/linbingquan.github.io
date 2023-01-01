@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a as l}from"./app.3a22aa36.js";const C=JSON.parse('{"title":"字符串反转","description":"","frontmatter":{},"headers":[],"relativePath":"algorithm/string-reverse.md"}'),p={name:"algorithm/string-reverse.md"},o=l("",2),e=[o];function t(r,c,F,y,D,i){return n(),a("div",null,e)}const _=s(p,[["render",t]]);export{C as __pageData,_ as default};
