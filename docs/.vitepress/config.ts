@@ -13,6 +13,13 @@ export default defineConfig({
         ],
       },
       {
+        text: "Rust",
+        collapsible: true,
+        items: [
+          { text: "Rust 入门", link: "/rust/basic" },
+        ],
+      },
+      {
         text: "JavaScript",
         collapsible: true,
         items: [
@@ -57,6 +64,7 @@ export default defineConfig({
         collapsible: true,
         items: [
           { text: "配色方案", link: "/design/colors" },
+          { text: "线条画", link: "/design/line-art" },
         ]
       },
       {
