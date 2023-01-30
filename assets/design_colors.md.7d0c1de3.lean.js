@@ -1,0 +1,1 @@
+import{_ as s,c as o,o as a,a as c}from"./app.611aeb95.js";const b=JSON.parse('{"title":"配色方案","description":"","frontmatter":{},"headers":[],"relativePath":"design/colors.md"}'),l={name:"design/colors.md"},i=c("",2),d=[i];function v(r,e,n,t,p,f){return a(),o("div",null,d)}const h=s(l,[["render",v]]);export{b as __pageData,h as default};

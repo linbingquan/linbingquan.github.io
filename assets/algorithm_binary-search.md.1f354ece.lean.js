@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a as l}from"./app.c3f57b1b.js";const A=JSON.parse('{"title":"二分搜索","description":"","frontmatter":{},"headers":[],"relativePath":"algorithm/binary-search.md"}'),o={name:"algorithm/binary-search.md"},p=l("",3),t=[p];function e(c,r,y,F,D,i){return n(),a("div",null,t)}const h=s(o,[["render",e]]);export{A as __pageData,h as default};
