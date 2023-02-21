@@ -63,6 +63,7 @@ export default defineConfig({
         text: "设计",
         collapsible: true,
         items: [
+          { text: "blender 一键切换中英文界面", link: "/blender/translate" },
           { text: "配色方案", link: "/design/colors" },
           { text: "线条画", link: "/design/line-art" },
         ]
