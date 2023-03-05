@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.c49b3118.js";const i=JSON.parse('{"title":"爬楼梯","description":"","frontmatter":{},"headers":[],"relativePath":"algorithm/climb-stairs.md"}'),p={name:"algorithm/climb-stairs.md"},o=l("",17),t=[o];function e(c,r,y,F,D,C){return a(),n("div",null,t)}const d=s(p,[["render",e]]);export{i as __pageData,d as default};

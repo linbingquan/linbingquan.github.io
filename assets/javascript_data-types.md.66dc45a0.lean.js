@@ -1,0 +1,1 @@
+import{_ as a,c as t,o as e,a as i}from"./app.c49b3118.js";const m=JSON.parse('{"title":"JavaScript 数据类型","description":"","frontmatter":{},"headers":[],"relativePath":"javascript/data-types.md"}'),l={name:"javascript/data-types.md"},r=i("",8),o=[r];function c(s,p,n,_,d,u){return e(),t("div",null,o)}const S=a(l,[["render",c]]);export{m as __pageData,S as default};
