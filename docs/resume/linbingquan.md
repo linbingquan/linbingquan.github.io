@@ -2,11 +2,9 @@
 
 ## 联系方式
 
-<a href="tel:13750017518">13750017518</a> | 695601626@qq.com
+![QQ](https://img.shields.io/badge/QQ:695601626-0088ff?logo=tencentqq&logoColor=white)
 
-github：https://github.com/linbingquan
-
-![](https://komarev.com/ghpvc/?username=linbingquan&color=blue)
+![WeChat](https://img.shields.io/badge/WeChat:linbingquan695601626-2aae67?logo=wechat&logoColor=white)
 
 ## 个人简介
 
