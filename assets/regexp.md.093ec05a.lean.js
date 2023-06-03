@@ -1,1 +1,0 @@
-import{e as t,u as a,c as r,o}from"./app.c49b3118.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"regexp.md"}'),s={name:"regexp.md"},m=t({...s,setup(n){const{go:e}=a();return e("/javascript/regexp"),(c,p)=>(o(),r("div"))}});export{i as __pageData,m as default};
