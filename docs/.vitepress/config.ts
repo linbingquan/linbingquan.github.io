@@ -7,21 +7,21 @@ export default defineConfig({
     sidebar: [
       {
         text: "介绍",
-        collapsible: true,
+        collapsed: false,
         items: [
           { text: "林炳权", link: "/resume/linbingquan" },
         ],
       },
       {
         text: "Rust",
-        collapsible: true,
+        collapsed: false,
         items: [
           { text: "Rust 入门", link: "/rust/basic" },
         ],
       },
       {
         text: "JavaScript",
-        collapsible: true,
+        collapsed: false,
         items: [
           { text: "数据类型", link: "/javascript/data-types" },
           { text: "原型链", link: "/javascript/prototype" },
@@ -31,7 +31,7 @@ export default defineConfig({
       },
       {
         text: "WebGL",
-        collapsible: true,
+        collapsed: false,
         items: [
           { text: "WebGL 入门", link: "/webgl/tutorial" },
           { text: "WebGL 所见即所得", link: "/webgl/blender-threejs" },
@@ -39,14 +39,14 @@ export default defineConfig({
       },
       {
         text: "CSS",
-        collapsible: true,
+        collapsed: false,
         items: [
           { text: "前端适配", link: "/css/adaptation" },
         ],
       },
       {
         text: "算法 (algorithm)",
-        collapsible: true,
+        collapsed: false,
         items: [
           { text: "交换数据", link: "/algorithm/swap" },
           { text: "随机算法", link: "/algorithm/shuffle" },
@@ -61,7 +61,7 @@ export default defineConfig({
       },
       {
         text: "设计",
-        collapsible: true,
+        collapsed: false,
         items: [
           { text: "blender 一键切换中英文界面", link: "/blender/translate" },
           { text: "配色方案", link: "/design/colors" },
@@ -70,14 +70,14 @@ export default defineConfig({
       },
       {
         text: "面试题目",
-        collapsible: true,
+        collapsed: false,
         items: [
           { text: "promise", link: "/interview/promise" },
         ],
       },
       {
         text: "前端规范",
-        collapsible: true,
+        collapsed: false,
         items: [
           { text: "前端规范 javascript", link: "/standard/javascript" },
           { text: "前端规范 css", link: "/standard/css" },
