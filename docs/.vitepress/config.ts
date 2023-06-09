@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   title: "林炳权的博客",
-  description: "林炳权的博客",
+  description: "林炳权,linbingquan,博客,林炳权的博客",
   themeConfig: {
     sidebar: [
       {
