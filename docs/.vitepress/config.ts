@@ -1,6 +1,4 @@
-import { defineConfig } from "vitepress";
-
-export default defineConfig({
+export default {
   title: "林炳权的博客",
   description: "林炳权,linbingquan,博客,林炳权的博客",
   themeConfig: {
@@ -85,4 +83,4 @@ export default defineConfig({
       },
     ],
   },
-});
+};
