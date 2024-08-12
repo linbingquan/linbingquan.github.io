@@ -36,6 +36,14 @@ export default {
         ]
       },
       {
+        text: "three.js",
+        collapsed: false,
+        items: [
+          { text: "mesh", link: "/three.js/mesh" },
+          { text: "shader", link: "/three.js/shader" },
+        ]
+      },
+      {
         text: "CSS",
         collapsed: false,
         items: [
