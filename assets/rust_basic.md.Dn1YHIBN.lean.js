@@ -1,1 +1,0 @@
-import{_ as a,c as t,o as e,a2 as r}from"./chunks/framework.DEnmJWvs.js";const _=JSON.parse('{"title":"Rust 入门","description":"","frontmatter":{},"headers":[],"relativePath":"rust/basic.md","filePath":"rust/basic.md"}'),s={name:"rust/basic.md"},l=r("",20),i=[l];function u(o,h,d,n,c,b){return e(),t("div",null,i)}const q=a(s,[["render",u]]);export{_ as __pageData,q as default};
