@@ -25,6 +25,39 @@
   - 元组用一对 `()` 包括的一组数据，可以包含不同种类的数据
   - 数组用一对 `[]` 包括的同类型数据
 
+### Rust 数据类型转换
+
+#### 将 String 转换为 &'static str
+
+```rs
+fn box_leak(string: String) -> &'static str {
+    Box::leak(string.into_boxed_str())
+}
+
+fn leak(string: String) -> &'static str {
+    string.leak()
+}
+```
+
+#### Rust 中 String，＆str，Vec\<u8\> 和 ＆[u8] 的惯用转换
+
+> 变量 s 为 from 类型
+
+| from      | to        | fn                                                       |
+| --------- | --------- | -------------------------------------------------------- |
+| &str      | String    | String::from(s) <br /> s.to_string() <br /> s.to_owned() |
+| &str      | &[u8]     | s.as_bytes()                                             |
+| &str      | Vec\<u8\> | s.as_bytes().to_vec()                                    |
+| String    | &[u8]     | s.as_bytes()                                             |
+| String    | &str      | s.as_str() <br /> &s                                     |
+| String    | Vec\<u8\> | s.into_bytes()                                           |
+| &[u8]     | &str      | std::str::from_utf8(s).unwrap()                          |
+| &[u8]     | String    | String::from_utf8(s).unwrap()                            |
+| &[u8]     | Vec\<u8\> | s.to_vec()                                               |
+| Vec\<u8\> | &str      | std::str::from_utf8(&s).unwrap()                         |
+| Vec\<u8\> | String    | String::from_utf8(s).unwrap()                            |
+| Vec\<u8\> | &[u8]     | &s <br /> s.as_slice()                                   |
+
 ## Rust 所有权
 
 ## Rust 结构体
