@@ -1,1 +1,0 @@
-import{d as t,a3 as a,c as r,o}from"./chunks/framework.DEnmJWvs.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"regexp.md","filePath":"regexp.md"}'),s={name:"regexp.md"},i=t({...s,setup(n){const{go:e}=a();return e("/javascript/regexp"),(p,c)=>(o(),r("div"))}});export{d as __pageData,i as default};
