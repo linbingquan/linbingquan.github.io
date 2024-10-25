@@ -1,6 +1,17 @@
 export default {
   title: "林炳权的博客",
   description: "林炳权,linbingquan,博客,林炳权的博客",
+  head: [
+    [
+      'script',
+      {},
+      `(function(c,l,a,r,i,t,y){
+  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "oo3igoja3q");`
+    ]
+  ],
   themeConfig: {
     sidebar: [
       {
