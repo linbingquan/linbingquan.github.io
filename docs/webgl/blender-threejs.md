@@ -1,14 +1,16 @@
 # WebGL 所见即所得
 
-## 效果图
+使用 blender 设计并导出模型到 three.js
 
-> blender v3.3.1 three.js r146
+## blender v4.2.0 three.js r168
 
-使用 blender 设计和导出模型到 three.js
+![blender420-threejs168](blender420-threejs168.png)
 
-![blender-threejs](blender-threejs.png)
+## blender v3.3.1 three.js r146
 
-## 关键代码
+![blender-threejs](blender331-threejs146.png)
+
+> 关键代码
 
 ```js
 renderer.outputEncoding = THREE.sRGBEncoding;
